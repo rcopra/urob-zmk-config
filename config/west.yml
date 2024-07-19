@@ -4,6 +4,9 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: temper
+      url-base: https://github.com/raeedcho
+
   projects:
     - name: zmk
       remote: urob
@@ -12,5 +15,10 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: v2
+    - name: temper-zmk-config
+      remote: temper
+      revision: main
+      import: west.yml
+
   self:
     path: config
