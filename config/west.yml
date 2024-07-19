@@ -18,7 +18,6 @@ manifest:
     - name: temper-zmk-config
       remote: temper
       revision: main
-      import: west.yml
 
   self:
     path: config
