@@ -1,4 +1,4 @@
-/* source keypos definitions */
+/* source key position labels */
 #include "zmk-helpers/key-labels/36.h"
 
 /* map Zen's extra keys */
@@ -8,8 +8,8 @@
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
-/* use 5-column layout for Zen */
-ZMK_APPLY_MATRIX_TRANSFORM(five_column_transform)
-
 /* source the main keymap */
 #include "base.keymap"
+
+/* use 5-column layout for Zen */
+ZMK_APPLY_MATRIX_TRANSFORM(five_column_transform)
