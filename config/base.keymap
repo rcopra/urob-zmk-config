@@ -134,9 +134,9 @@ ZMK_TRI_STATE(smart_mouse,
 
 /* Custom behaviors */
 
-// Alt+Tab swapper, requires PR #1366
+// Cmd+Tab swapper for macOS
 ZMK_TRI_STATE(swapper,
-    bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
     ignored-key-positions = <LT2>;
 )
 
