@@ -20,7 +20,7 @@
 #define MOUSE 6
 
 #include "combos.dtsi"  // requires layer aliases
-// #include "mouse.dtsi"
+#include "mouse.dtsi"
 #include "extra_keys.h"
 
 #define XXX &none
