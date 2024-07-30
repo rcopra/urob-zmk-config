@@ -108,6 +108,19 @@ ZMK_MOD_MORPH(smart_shft,
     /delete-property/ ignore-modifiers;
 };
 
+// define hypers
+#define MY_HYPER LS(LC(LG(LALT)))
+#define MY_MEH LC(LG(LALT))
+
+// define copy/paste
+#define MY_UNDO LG(Z)
+#define MY_REDO LS(LG(Z))
+#define MY_CUT LG(X)
+#define MY_COPY LG(C)
+#define MY_PASTE LG(V)
+#define MY_BACK LG(LBKT)
+#define MY_FWD LG(RBKT)
+
 // tap: num-word | double-tap: sticky num-layer | hold: num-layer
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num,
@@ -225,7 +238,7 @@ ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    X_LT     &kp Q         &kp W         &kp F         &kp P         &kp B           X_MT     &kp J         &kp L         &kp U         &kp Y         &kp SQT         X_RT
+    X_LT     &kp Q         &kp W        &hml MY_HYPER F   &kp P         &kp B           X_MT     &kp J         &kp L       &hml MY_HYPER U    &kp Y         &kp SQT         X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &hml LCTRL A   &hml LALT R   &hml LGUI S  &hml LSHFT T  &kp G           X_MM     &kp M         &hmr RSHIFT N  &hmr LGUI E  &hmr LALT I   &hmr LCTRL O     X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
